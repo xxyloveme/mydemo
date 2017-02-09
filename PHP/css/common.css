@@ -1,0 +1,14 @@
+table{
+	margin: auto;
+	width: 600px;
+	border-collapse: collapse;
+	text-align: center;
+	}
+td,th{
+	height: 30px;
+}
+input{
+	width: 100%;
+	border: 0;
+	text-indent: 10px;
+}

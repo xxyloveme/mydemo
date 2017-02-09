@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<form>-->
+			<input type="text" value="" name="username" />
+			<select name="chose">
+				<option value="wo">wo</option>
+				<option value="qo">qo</option>
+				<option value="do">do</option>
+				<option value="co">co</option>
+			</select>
+			<button onclick="show()">提交</button>
+			<div id="text"></div>
+		<!--</form>-->
+	</body>
+	<script>
+		var text = document.getElementById("text");
+		var option = document.getElementsByTagName("option");
+		function show(){
+			var length = option.length;
+			for(var i=0;i<length;i++){
+				console.log(option[i].selected);
+				if(option[i].selected){
+					text.innerHTML=option[i].innerHTML;
+					return;
+				}
+				
+			}
+		}
+	</script>
+</html>
